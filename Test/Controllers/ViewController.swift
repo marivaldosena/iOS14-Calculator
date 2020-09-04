@@ -36,69 +36,20 @@ class ViewController: UIViewController {
     //MARK: - Life Cycle Events - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        zeroButton.layer.cornerRadius = 20
     }
     
     //MARK: - Numbers' buttons
-    
-    @IBAction func zeroButtonPressed(_ sender: UIButton) {
-    }
- 
-    @IBAction func oneButtonPressed(_ sender: UIButton) {
+    @IBAction func numberPressed(_ sender: UIButton) {
     }
     
-    @IBAction func threeButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func fourButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func fiveButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func sixButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func sevenButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func eightButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func nineButtonPressed(_ sender: UIButton) {
-    }
     
     //MARK: - Operations' buttons
-    
-    @IBAction func additionButtonPressed(_ sender: UIButton) {
+    @IBAction func operationPressed(_ sender: UIButton) {
     }
     
-    @IBAction func subtractionButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func multiplicationButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func divisionButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func percentButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func resultButtonPressed(_ sender: UIButton) {
-    }
     
     //MARK: - Special operations' buttons
-    
-    @IBAction func commaButtonPressed(_ sender: UIButton) {
+    @IBAction func specialOperationPressed(_ sender: UIButton) {
     }
-    
-    @IBAction func acButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func negationButtonPressed(_ sender: UIButton) {
-    }
-    
 }
 
