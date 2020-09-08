@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var acButton: UIButton!
     @IBOutlet weak var negationButton: UIButton!
     
+    var temp = ""
+    
     
     //MARK: - Life Cycle Events - viewDidLoad
     override func viewDidLoad() {
@@ -40,6 +42,11 @@ class ViewController: UIViewController {
     
     //MARK: - Numbers' buttons
     @IBAction func numberPressed(_ sender: UIButton) {
+        if let numberText = sender.currentTitle {
+            if !(temp == "" && numberText == "0") {
+                temp += numberText
+            }
+        }
     }
     
     
