@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    var temp = ""
+    var temp = "0"
     
     
     //MARK: - Life Cycle Events - viewDidLoad
@@ -69,6 +69,8 @@ class ViewController: UIViewController {
                 temp = "0"
             case "+/-":
                 temp = getChangedNumberSign(numberText: temp)
+            case ",":
+                temp = getNumberWithComma(numberText: temp)
             default: break
             }
         }
@@ -77,6 +79,7 @@ class ViewController: UIViewController {
     
     private func getChangedNumberSign(numberText: String) -> String {
         var tempNumberText = numberText
+        
         if tempNumberText.contains("-") {
             tempNumberText = tempNumberText.replacingOccurrences(of: "-", with: "")
         } else if !(tempNumberText.isEmpty || tempNumberText == "0") {
@@ -84,7 +87,20 @@ class ViewController: UIViewController {
         } else {
             tempNumberText = "0"
         }
-       return tempNumberText
+        
+        return tempNumberText
     }
+    
+    private func getNumberWithComma(numberText: String) -> String {
+        var tempNumberText = numberText
+        
+        if !(tempNumberText.contains(".") || tempNumberText.isEmpty) {
+            tempNumberText += "."
+        }
+        
+        return tempNumberText
+    }
+    
+    
 }
 
