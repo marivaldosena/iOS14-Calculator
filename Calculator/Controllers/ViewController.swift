@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     var temp = "0"
+    var firstOperand: Double?
+    var secondOperand: Double?
+    var operation: String?
     
     
     //MARK: - Life Cycle Events - viewDidLoad
@@ -58,6 +61,11 @@ class ViewController: UIViewController {
     
     //MARK: - Operations' buttons
     @IBAction func operationPressed(_ sender: UIButton) {
+        if let operationText = sender.currentTitle {
+            saveOperand()
+            setOperation(operationText: operationText)
+            doOperation()
+        }
     }
     
     
@@ -101,6 +109,74 @@ class ViewController: UIViewController {
         return tempNumberText
     }
     
+    private func saveOperand() {
+        if firstOperand == nil {
+            firstOperand = Double(temp)
+        } else if secondOperand == nil {
+            secondOperand = Double(temp)
+            doOperation()
+        } else {
+            firstOperand = nil
+            secondOperand = nil
+        }
+        clearScreen()
+        print(firstOperand)
+        print(secondOperand)
+        print(operation)
+    }
     
+    private func setOperation(operationText: String) {
+        if operation == nil {
+            switch operationText {
+            case "+":
+                operation = "+"
+            case "-":
+                operation = "-"
+            case "/":
+                operation = "/"
+            case "x":
+                operation = "x"
+            default:
+                break;
+            }
+        }
+        
+        doOperation()
+    }
+    
+    private func clearScreen() {
+        temp = "0"
+        resultLabel.text = temp
+    }
+    
+    private func doOperation() {
+        if let firstOperand = firstOperand, let secondOperand = secondOperand, let operation = operation {
+            if !operation.isEmpty {
+                resultLabel.text = String(getResult(firstOperand: firstOperand, secondOperand: secondOperand))
+                self.operation = nil
+            }
+        }
+    }
+    
+    private func getResult(firstOperand: Double, secondOperand: Double) -> Double {
+        var result = 0.0
+        
+        switch operation {
+        case "+":
+            result = firstOperand + secondOperand
+        case "-":
+            result = firstOperand - secondOperand
+        case "/":
+            if secondOperand != 0.0 {
+                result = firstOperand / secondOperand
+            }
+        case "x":
+            result = firstOperand * secondOperand
+        default:
+            break
+        }
+        
+        return result
+    }
 }
 
