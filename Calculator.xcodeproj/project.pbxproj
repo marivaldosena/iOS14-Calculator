@@ -40,7 +40,7 @@
 		C951E32B24FD0EED00E95633 = {
 			isa = PBXGroup;
 			children = (
-				C951E33624FD0EF000E95633 /* Test */,
+				C951E33624FD0EF000E95633 /* Calculator */,
 				C951E33524FD0EF000E95633 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C951E33624FD0EF000E95633 /* Test */ = {
+		C951E33624FD0EF000E95633 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				C98D5C2824FD77A3001C8E23 /* Models */,
@@ -65,7 +65,7 @@
 				C951E34224FD0F7400E95633 /* LaunchScreen.storyboard */,
 				C951E34524FD0F7400E95633 /* Info.plist */,
 			);
-			path = Test;
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		C98D5C2624FD7781001C8E23 /* Views */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C951E33324FD0EEE00E95633 /* Test */ = {
+		C951E33324FD0EEE00E95633 /* Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C951E34824FD0F7400E95633 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = C951E34824FD0F7400E95633 /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
 				C951E33024FD0EEE00E95633 /* Sources */,
 				C951E33124FD0EEE00E95633 /* Frameworks */,
@@ -106,7 +106,7 @@
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = Calculator;
 			productName = Test;
 			productReference = C951E33424FD0EF000E95633 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C951E32F24FD0EEE00E95633 /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = C951E32F24FD0EEE00E95633 /* Build configuration list for PBXProject "Calculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C951E33324FD0EEE00E95633 /* Test */,
+				C951E33324FD0EEE00E95633 /* Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N4P82U958;
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Calculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N4P82U958;
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Calculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C951E32F24FD0EEE00E95633 /* Build configuration list for PBXProject "Test" */ = {
+		C951E32F24FD0EEE00E95633 /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C951E34624FD0F7400E95633 /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C951E34824FD0F7400E95633 /* Build configuration list for PBXNativeTarget "Test" */ = {
+		C951E34824FD0F7400E95633 /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C951E34924FD0F7400E95633 /* Debug */,
