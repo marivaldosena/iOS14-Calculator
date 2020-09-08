@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var acButton: UIButton!
     @IBOutlet weak var negationButton: UIButton!
     
+    @IBOutlet weak var resultLabel: UILabel!
+    
     var temp = ""
     
     
@@ -47,6 +49,8 @@ class ViewController: UIViewController {
                 temp += numberText
             }
         }
+        
+        resultLabel.text = temp
     }
     
     

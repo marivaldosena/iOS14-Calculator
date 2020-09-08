@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -362,6 +362,7 @@
                         <outlet property="oneButton" destination="fPB-O4-6JY" id="fuT-CT-WZ1"/>
                         <outlet property="percentButton" destination="VXB-w5-PX1" id="1ru-SE-i6L"/>
                         <outlet property="resultButton" destination="Qrh-Kp-6od" id="Fwb-zA-ZXq"/>
+                        <outlet property="resultLabel" destination="wUM-4d-FdH" id="jaQ-8h-m1d"/>
                         <outlet property="sevenButton" destination="lko-0i-lHB" id="GgB-QN-5fH"/>
                         <outlet property="sixButton" destination="Rz8-Pm-cik" id="hJm-Vn-izR"/>
                         <outlet property="subtractionButton" destination="wtk-Gm-hUJ" id="zOz-ND-tKV"/>
