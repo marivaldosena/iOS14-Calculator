@@ -45,8 +45,10 @@ class ViewController: UIViewController {
     //MARK: - Numbers' buttons
     @IBAction func numberPressed(_ sender: UIButton) {
         if let numberText = sender.currentTitle {
-            if !(temp == "" && numberText == "0") {
+            if !(temp.isEmpty || temp == "0") {
                 temp += numberText
+            } else {
+                temp = numberText
             }
         }
         
@@ -61,6 +63,28 @@ class ViewController: UIViewController {
     
     //MARK: - Special operations' buttons
     @IBAction func specialOperationPressed(_ sender: UIButton) {
+        if let specialCharacter = sender.currentTitle {
+            switch specialCharacter {
+            case "AC":
+                temp = "0"
+            case "+/-":
+                temp = getChangedNumberSign(numberText: temp)
+            default: break
+            }
+        }
+        resultLabel.text = temp
+    }
+    
+    private func getChangedNumberSign(numberText: String) -> String {
+        var tempNumberText = numberText
+        if tempNumberText.contains("-") {
+            tempNumberText = tempNumberText.replacingOccurrences(of: "-", with: "")
+        } else if !(tempNumberText.isEmpty || tempNumberText == "0") {
+            tempNumberText = "-" + tempNumberText
+        } else {
+            tempNumberText = "0"
+        }
+       return tempNumberText
     }
 }
 

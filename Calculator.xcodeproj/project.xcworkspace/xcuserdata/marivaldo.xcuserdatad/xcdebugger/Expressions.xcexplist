@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.getChangedNumberSign(numberText:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tempNumberText != &quot;&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.numberPressed(_:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
